@@ -12,6 +12,7 @@ import Notification from "./pages/Notification";
 import Login from "./pages/Login";
 import SignUp from "./pages/Signup";
 import ContactForm from "./pages/Contactform";
+import Cart from "./pages/Cart";
 
 
 
@@ -45,6 +46,7 @@ const App = () => {
                 <Route path="/courses" element={<Courses />} />
                 <Route path="/notification" element={<Notification />} />
                 <Route path="/contact" element={<ContactForm />} />
+                <Route path="/cart" element={<Cart />} />
               </Routes>
             </Dashboard>
           }

@@ -23,7 +23,8 @@ const sidebarItems = [
   { title: "Support", icon: <HelpCircle size={20} />, path: "/support" },
   { title: "Login", icon: <LogIn size={20} />, path: "/login" },
   { title: "SignUp", icon: <UserPlus size={20} />, path: "/signup" },
-  { title: "Contact", icon: <HelpCircle size={20} />, path: "/contact" }
+  { title: "Contact", icon: <HelpCircle size={20} />, path: "/contact" },
+  { title: "Cart", icon: <HelpCircle size={20} />, path: "/cart" },
 ];
  
 const Sidebar = () => {
