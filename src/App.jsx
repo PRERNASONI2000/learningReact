@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import Aos from "aos";
 import { BrowserRouter as Router , Route , Routes } from "react-router-dom";
 import Dashboard from "./layout/Dashboard";
 import Profile from "./pages/Profile";
@@ -17,6 +18,11 @@ import Cart from "./pages/Cart";
 
 
 const App = () => {
+
+  useEffect(()=>{
+    Aos.init();
+  }, [])
+
   const [data, setData] = useState("");
    useEffect(() => {
     axios.get("http://localhost:5000/api/hello")
