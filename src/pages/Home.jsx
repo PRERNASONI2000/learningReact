@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = ({backendMessage}) => {
   return (
-    <div data-aos="fade-up" className="flex items-center flex-col justify-center h-screen bg-base-300 w-full">
+    <div className="flex items-center flex-col justify-center h-screen bg-base-300 w-full">
       <h1 className="text-4xl font-bold text-blue-600">Home Page</h1>
       <input type="checkbox" class="checkbox checkbox-secondary" />
       <div className="card bg-base-100 w-96 shadow-sm">
