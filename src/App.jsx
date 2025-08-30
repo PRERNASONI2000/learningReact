@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import axios from "axios";
+// import axios from "axios";
 import Aos from "aos";
 import { BrowserRouter as Router , Route , Routes } from "react-router-dom";
 import Dashboard from "./layout/Dashboard";
@@ -23,12 +23,13 @@ const App = () => {
     Aos.init();
   }, [])
 
-  const [data, setData] = useState("");
-   useEffect(() => {
-    axios.get("http://localhost:5000/api/hello")
-      .then(res => setData(res.data.message))
-      .catch(err => console.error(err));
-  }, []);
+  // const [data, setData] = useState("");
+  //  useEffect(() => {
+  //   axios.get("http://localhost:5000/api/hello")
+  //     .then(res => setData(res.data.message))
+  //     .catch(err => console.error(err));
+  // }, []);
+  
   return (
      <Router>
       <Routes>
@@ -42,7 +43,7 @@ const App = () => {
           element={
             <Dashboard>
               
-    <h1>{data}</h1>
+    {/* <h1>{data}</h1> */}
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/profile" element={<Profile />} />

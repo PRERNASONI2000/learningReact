@@ -36,7 +36,7 @@ const Cart = () => {
       className="p-6 rounded-2xl shadow-lg bg-white cursor-pointer"
     >
       <h2 className="text-xl font-bold">Acernity UI</h2>
-      <p className="text-gray-600">Modern Animated Components</p>
+      <p className="text-gray-600">Mozdern Animated Components</p>
       <div className="notification-card">
   📢 New course uploaded: React Basics!
 </div>
