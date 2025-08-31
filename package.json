@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://PRERNASONI2000.github.io/learningReact/",
+  "homepage": "https://prernasoni2000.github.io/learningReact/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
