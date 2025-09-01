@@ -52,7 +52,7 @@ const Sidebar = () => {
               className={({ isActive }) =>
                 `py-2 px-3 flex items-center gap-3 rounded-md transition ${
                   isActive
-                    ? "bg-gray-700 text-yellow-400"
+                    ? "bg-gray-700 text-blue-400"
                     : "hover:bg-gray-800 text-gray-300"
                 }`
               }
