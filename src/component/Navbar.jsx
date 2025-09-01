@@ -13,7 +13,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <header className="shadow px-4 py-1 flex justify-end items-center 
-    bg-base-300 text-base-content border-b border-base-content/10">
+    bg-base-200 text-base-content border-b border-base-content/10">
       {/* <h1 className="text-lg font-bold">Dashboard</h1> */}
       <div className="flex items-center">
         {/* <Link to="/login">
