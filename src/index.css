@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lily+Script+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pompiere&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lily+Script+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pompiere&family=Ranchers&family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Manrope:wght@200..800&family=Merienda:wght@300..900&family=Rozha+One&display=swap');
 
 @import "tailwindcss";
 
@@ -33,21 +33,16 @@ h3,
 h4,
 h5,
 h6{
-     font-family: "Lily Script One", system-ui;
+     font-family: "PT Serif", system-ui;
 }
 
-.pt-serif {
-  font-family: "PT Serif", serif;
-}
-
-.pompiere {
-  font-family: "Pompiere", sans-serif;
-}
-
-.grey-qo {
-  font-family: "Grey Qo", cursive;
-}
-
-.ranchers {
-  font-family: "Ranchers", sans-serif;
-}
+.pt-serif {font-family: "PT Serif", serif;}
+.pompiere {font-family: "Pompiere", sans-serif;}
+.grey-qo { font-family: "Grey Qo", cursive;}
+.ranchers {font-family: "Ranchers", sans-serif;}
+.manrope {font-family: "Manrope", sans-serif;}
+.libre-baskerville {font-family: "Libre Baskerville", serif;}
+.dm-serif-display {font-family: "DM Serif Display", serif;}
+.merienda {font-family: "Merienda", cursive;}
+.literata {font-family: "Literata", serif;}
+.rozha-one-regular { font-family: "Rozha One", serif;}
