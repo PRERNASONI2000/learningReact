@@ -46,3 +46,12 @@ h6{
 .merienda {font-family: "Merienda", cursive;}
 .literata {font-family: "Literata", serif;}
 .rozha-one-regular { font-family: "Rozha One", serif;}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}

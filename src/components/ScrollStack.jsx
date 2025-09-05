@@ -239,7 +239,7 @@ const ScrollStack = ({
 
   return (
     <div
-      className={`relative w-full h-full overflow-y-auto overflow-x-visible ${className}`.trim()}
+      className={`relative w-full h-full overflow-y-scroll hide-scrollbar overflow-x-visible ${className}`.trim()}
       ref={scrollerRef}
       style={{
         overscrollBehavior: 'contain',
@@ -250,7 +250,7 @@ const ScrollStack = ({
         willChange: 'scroll-position'
       }}
     >
-      <div className="scroll-stack-inner px-10 pb-[20rem]">
+      <div className="scroll-stack-inner px-0 pb-[20rem]">
         {children}
         {/* Spacer so the last pin can release cleanly */}
         <div className="scroll-stack-end w-full" />

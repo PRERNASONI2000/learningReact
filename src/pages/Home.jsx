@@ -43,7 +43,7 @@ const Home = ({ backendMessage }) => {
   return (
     <>
       <SplashCursor />
-      <div className="relative w-full h-[800px] flex items-center justify-center">
+      <div className="relative w-full h-[700px] flex">
         <DotGrid
           dotSize={1}
           gap={15}
@@ -52,7 +52,7 @@ const Home = ({ backendMessage }) => {
         />
         <div className="absolute z-10 text-center pb-0">
 
-          <h1 data-aos="fade-up" className="pt-serif font-bold text-5xl bg-gradient-to-r pb-2 from-primary to-secondary bg-clip-text text-transparent">
+          <h1 data-aos="fade-up" className="pt-serif font-bold text-5xl bg-gradient-to-r pb-2 pt-6 from-primary to-secondary bg-clip-text text-transparent">
             SmartLearning, Learn limitless & Earn effortless
           </h1>
           <p data-aos="fade-up" className="text-semibold text-lg leading-6 text-base-content">
@@ -82,17 +82,17 @@ const Home = ({ backendMessage }) => {
 
       </div>
 
-      <div className="w-full bg-blue-950 pb-20">
+      <div className="w-full bg-blue-950 pt-10 md:pt-0 pb-20">
 
         <div data-aos="fade-up" data-aos-duration="1500">
           <CurvedLoop
-          marqueeText="Learn ✦ Code ✦ Create ✦ Shine ✦ Explore ✦ Build ✦ Grow ✦ Succeed ✦"
-          speed={5}
-          curveAmount={250}
-          direction="left"
-          interactive={true}
-          className="text-blue-400 text-shadow-lg"
-        />
+            marqueeText="Learn ✦ Code ✦ Create ✦ Shine ✦ Explore ✦ Build ✦ Grow ✦ Succeed ✦"
+            speed={5}
+            curveAmount={250}
+            direction="left"
+            interactive={true}
+            className="text-blue-400 text-shadow-lg"
+          />
         </div>
       </div>
 
@@ -209,7 +209,7 @@ const Home = ({ backendMessage }) => {
         />
 
         <div className="flex flex-col md:flex-row gap-10 items-center w-full px-8 mt-5">
-          <div className="w-fit h-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
             <ElectricBorder
               // color="#7df9ff"
               color="#93C5FD"
@@ -220,7 +220,7 @@ const Home = ({ backendMessage }) => {
               className="shadow-none"
             >
               <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" className="w-full h-auto block mx-auto pb-6" alt="course1" />
+                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="course1" />
                 <h3 className="text-xl font-semibold pt-serif">HTML & CSS</h3>
                 <p className="opacity-80 mt-2">Beginner • 3 Weeks</p>
                 <p className="opacity-70 mt-2">Build responsive web pages and pixel perfect website.</p>
@@ -230,7 +230,7 @@ const Home = ({ backendMessage }) => {
               </div>
             </ElectricBorder>
           </div>
-          <div className="w-fit h-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
             <ElectricBorder
               // color="#7df9ff"
               color="#93C5FD"
@@ -241,7 +241,7 @@ const Home = ({ backendMessage }) => {
               className="shadow-none"
             >
               <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg" className="w-full h-auto block mx-auto pb-6 rounded-lg" alt="JavaScript" />
+                <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="JavaScript" />
                 <h3 className="text-xl font-semibold pt-serif mt-4">JavaScript Essentials</h3>
                 <p className="opacity-80 mt-2">Beginner–Intermediate • 4 Weeks</p>
                 <p className="opacity-70 mt-2">Master the logic, DOM manipulation, and interactivity.</p>
@@ -251,7 +251,7 @@ const Home = ({ backendMessage }) => {
               </div>
             </ElectricBorder>
           </div>
-          <div className="w-fit h-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
             <ElectricBorder
               // color="#7df9ff"
               color="#93C5FD"
@@ -262,7 +262,7 @@ const Home = ({ backendMessage }) => {
               className="shadow-none"
             >
               <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg" className="w-full h-auto block mx-auto pb-6 rounded-lg" alt="React" />
+                <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="React" />
                 <h3 className="text-xl font-semibold pt-serif mt-4">React for Beginners</h3>
                 <p className="opacity-80 mt-2">Intermediate • 5 Weeks</p>
                 <p className="opacity-70 mt-2">Learn components, hooks, and state management.</p>
@@ -275,7 +275,7 @@ const Home = ({ backendMessage }) => {
 
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-center w-full px-8 mt-5">
-          <div className="w-fit h-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
             <ElectricBorder
               // color="#7df9ff"
               color="#93C5FD"
@@ -286,7 +286,7 @@ const Home = ({ backendMessage }) => {
               className="shadow-none"
             >
               <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" className="w-full h-auto block mx-auto pb-6 rounded-lg" alt="Tailwind CSS" />
+                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="Tailwind CSS" />
                 <h3 className="text-xl font-semibold pt-serif mt-4">Tailwind CSS Mastery</h3>
                 <p className="opacity-80 mt-2">Intermediate • 2 Weeks</p>
                 <p className="opacity-70 mt-2">Create modern, responsive UIs faster with Tailwind.</p>
@@ -296,7 +296,7 @@ const Home = ({ backendMessage }) => {
               </div>
             </ElectricBorder>
           </div>
-          <div className="w-fit h-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
             <ElectricBorder
               // color="#7df9ff"
               color="#93C5FD"
@@ -307,7 +307,7 @@ const Home = ({ backendMessage }) => {
               className="shadow-none"
             >
               <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" className="w-full h-auto block mx-auto pb-6 rounded-lg" alt="UI UX" />
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="UI UX" />
                 <h3 className="text-xl font-semibold pt-serif mt-4">Python For Beginners</h3>
                 <p className="opacity-80 mt-2">Beginner • 3 Weeks</p>
                 <p className="opacity-70 mt-2">Understand design principles, wireframes & prototyping.</p>
@@ -317,7 +317,7 @@ const Home = ({ backendMessage }) => {
               </div>
             </ElectricBorder>
           </div>
-          <div className="w-fit h-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
             <ElectricBorder
               // color="#7df9ff"
               color="#93C5FD"
@@ -328,7 +328,7 @@ const Home = ({ backendMessage }) => {
               className="shadow-none"
             >
               <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" className="w-full h-auto block mx-auto pb-6 rounded-lg" alt="Full Stack" />
+                <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="Full Stack" />
                 <h3 className="text-xl font-semibold pt-serif mt-4">Full Stack Development</h3>
                 <p className="opacity-80 mt-2">Advanced • 8 Weeks</p>
                 <p className="opacity-70 mt-2">Frontend + Backend skills to build complete apps.</p>
@@ -341,28 +341,31 @@ const Home = ({ backendMessage }) => {
         </div>
       </div>
 
-      <div className="w-full max-w-5xl mx-auto my-20">
+      <div className="w-full mx-auto my-20">
         <div>
           <h4 data-aos="fade-up" className="text-3xl text-center text-base-content font-semibold"> Upgrade Your Career with In-Demand Top Tech Skills</h4>
           <div className="text-3xl text-center pt-5 pb-10 text-gray opacity-80 font-normal text-sm">new opportunities with continuous learning</div>
         </div>
-        <LogoLoop
-          logos={techLogos}
-          speed={80}
-          logoHeight={48}
-          gap={40}
-          direction="left"
-          pauseOnHover
-          scaleOnHover
-          fadeOut
-          fadeOutColor="oklch(var(--b1))" // DaisyUI background token
-        />
+        <div className="w-[320px] md:w-[640px] lg:w-5xl mx-auto">
+          <LogoLoop
+            logos={techLogos}
+            speed={80}
+            logoHeight={48}
+            gap={40}
+            direction="left"
+            pauseOnHover
+            scaleOnHover
+            fadeOut
+            fadeOutColor="oklch(var(--b1))" // DaisyUI background token
+          />
+        </div>
+
 
 
       </div>
 
 
-      <div className="md:w-[800px] h-[600px] w-[400px] text-center mx-auto pb-30">
+      <div className=" md:h-[600px] h-[800px] w-full text-center mx-auto pb-30 px-8">
         <h4 data-aos="fade-up" className="text-3xl text-center text-base-content font-semibold py-4">
           Why Choose us ?
         </h4>
@@ -452,92 +455,72 @@ const Home = ({ backendMessage }) => {
 
       </div>
 
-      <div className="w-full bg-blue-950 text-blue-400 pt-5 pb-15">
+      <div className="w-full bg-blue-950 text-blue-400 pt-5 pb-15 md:px-0 px-5">
         <div className="md:w-1/2 w-full d-flex items-center justify-center mx-auto">
-         <h4 data-aos="fade-up" className="text-3xl text-center font-semibold py-4">
-          Why Choose us ?
-        </h4>
+          <h4 data-aos="fade-up" className="text-3xl text-center font-semibold py-4">
+            Why Choose us ?
+          </h4>
 
-        <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
-  <input type="radio" name="my-accordion-2" defaultChecked />
-  <div className="collapse-title font-semibold">How do I enroll in a course?</div>
-  <div className="collapse-content text-sm text-white">
-    Browse our course catalog, click on the course you like, and then click the "Enroll Now" button to start learning.
-  </div>
-</div>
-
-<div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
-  <input type="radio" name="my-accordion-2" />
-  <div className="collapse-title font-semibold">Will I get a certificate after completing a course?</div>
-  <div className="collapse-content text-sm text-white">
-    Yes, you will receive a digital certificate after successfully completing all modules and passing the final quiz of the course.
-  </div>
-</div>
-
-<div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
-  <input type="radio" name="my-accordion-2" />
-  <div className="collapse-title font-semibold">Can I access the courses anytime?</div>
-  <div className="collapse-content text-sm text-white">
-    Absolutely! All our courses are self-paced and available 24/7. You can learn anytime, from any device.
-  </div>
-</div>
-
-<div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
-  <input type="radio" name="my-accordion-2" />
-  <div className="collapse-title font-semibold">What if I have doubts during learning?</div>
-  <div className="collapse-content text-sm text-white">
-    Each course has a dedicated Q&A section where you can ask questions. Our mentors and community will help you resolve them quickly.
-  </div>
-</div>
-
-        </div>
-      </div>
-
-
-   
-        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
-  <nav>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
-  </nav>
-</footer>
-
-
-
-      {/* <div className="flex items-center flex-col justify-center h-screen bg-base-300 w-full">
-      <h1 className="text-4xl font-bold text-blue-600">Home Page</h1>
-      <input type="checkbox" className="checkbox checkbox-secondary" />
-      <div className="card bg-base-100 w-96 shadow-sm">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Card Title {backendMessage }</h2>
-          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+          <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
+            <input type="radio" name="my-accordion-2" defaultChecked />
+            <div className="collapse-title font-semibold">How do I enroll in a course?</div>
+            <div className="collapse-content text-sm text-white">
+              Browse our course catalog, click on the course you like, and then click the "Enroll Now" button to start learning.
+            </div>
           </div>
+
+          <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title font-semibold">Will I get a certificate after completing a course?</div>
+            <div className="collapse-content text-sm text-white">
+              Yes, you will receive a digital certificate after successfully completing all modules and passing the final quiz of the course.
+            </div>
+          </div>
+
+          <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title font-semibold">Can I access the courses anytime?</div>
+            <div className="collapse-content text-sm text-white">
+              Absolutely! All our courses are self-paced and available 24/7. You can learn anytime, from any device.
+            </div>
+          </div>
+
+          <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title font-semibold">What if I have doubts during learning?</div>
+            <div className="collapse-content text-sm text-white">
+              Each course has a dedicated Q&A section where you can ask questions. Our mentors and community will help you resolve them quickly.
+            </div>
+          </div>
+
         </div>
       </div>
-    </div> */}
+
+
+
+      {/* <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          <a className="link link-hover">Branding</a>
+          <a className="link link-hover">Design</a>
+          <a className="link link-hover">Marketing</a>
+          <a className="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Contact</a>
+          <a className="link link-hover">Jobs</a>
+          <a className="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Legal</h6>
+          <a className="link link-hover">Terms of use</a>
+          <a className="link link-hover">Privacy policy</a>
+          <a className="link link-hover">Cookie policy</a>
+        </nav>
+      </footer> */}
+
     </>
   );
 }
