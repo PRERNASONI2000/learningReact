@@ -43,14 +43,14 @@ const Home = ({ backendMessage }) => {
   return (
     <>
       <SplashCursor />
-      <div className="relative w-full h-[700px] flex">
+      <div className="relative w-full md:h-[700px] h-[1000px] flex px-5">
         <DotGrid
           dotSize={1}
           gap={15}
           baseColor="#5227FF"
           activeColor="#5227FF"
         />
-        <div className="absolute z-10 text-center pb-0">
+        <div className="absolute z-10 text-center md:pb-0 pb-50">
 
           <h1 data-aos="fade-up" className="pt-serif font-bold text-5xl bg-gradient-to-r pb-2 pt-6 from-primary to-secondary bg-clip-text text-transparent">
             SmartLearning, Learn limitless & Earn effortless
@@ -58,13 +58,13 @@ const Home = ({ backendMessage }) => {
           <p data-aos="fade-up" className="text-semibold text-lg leading-6 text-base-content">
             Learn at your own pace with expert-led courses designed to help you <br className="hidden md:block" /> grow, achieve, and succeed.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-20 items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:mt-20 mt-6 items-center justify-center">
             <div className="p-0" data-aos="fade-right"> <img
               className="border-b-8 border-b-cyan-500 w-80 mx-auto"
               src="https://elearning-adbi.org/wp-content/uploads/2025/02/Digital-Public-Infrastructure-DPI-Foundations-Applications-and-Future-Pathways-300x193.png" alt="Album" />
             </div>
-            <div className="p-0" data-aos="fade-left">
-              <ul className="list-none text-base-content space-y-2 text-left">
+            <div className="p-0 md:mt-0 mt-5" data-aos="fade-left">
+              <ul className="list-none text-base-content space-y-2 text-left md:px-0 px-6">
                 <li className="flex items-center"><ShieldCheck className="mr-2" /> Learn at your own pace with expert-led courses.</li>
                 <li className="flex items-center"><ShieldCheck className="mr-2" /> Access hundreds of interactive lessons anytime, anywhere.</li>
                 <li className="flex items-center"><ShieldCheck className="mr-2" /> Track your progress and achieve your learning goals.</li>
@@ -74,7 +74,7 @@ const Home = ({ backendMessage }) => {
 
             </div>
           </div>
-          <button data-aos="flip-up" class="btn mt-15 uppercase text-lg bg-pink-700 text-white rounded-full h-15 md:w-100 w-50 py-4">
+          <button data-aos="flip-up" class="btn mt-15 uppercase text-lg bg-pink-700 text-white rounded-full h-15 md:w-100 md:w-50 w-full px-5 py-4">
             enroll your course now <ArrowRight />
           </button>
 
@@ -82,7 +82,7 @@ const Home = ({ backendMessage }) => {
 
       </div>
 
-      <div className="w-full bg-blue-950 pt-10 md:pt-0 pb-20">
+      <div className="w-full bg-blue-950 pt-8 md:pt-2 md:pb-20 pb-12">
 
         <div data-aos="fade-up" data-aos-duration="1500">
           <CurvedLoop
@@ -341,7 +341,7 @@ const Home = ({ backendMessage }) => {
         </div>
       </div>
 
-      <div className="w-full mx-auto my-20">
+      <div className="w-full mx-auto my-20 px-6">
         <div>
           <h4 data-aos="fade-up" className="text-3xl text-center text-base-content font-semibold"> Upgrade Your Career with In-Demand Top Tech Skills</h4>
           <div className="text-3xl text-center pt-5 pb-10 text-gray opacity-80 font-normal text-sm">new opportunities with continuous learning</div>
@@ -461,7 +461,7 @@ const Home = ({ backendMessage }) => {
             Why Choose us ?
           </h4>
 
-          <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
+          <div className="collapse collapse-arrow shadow-sm shadow-blue-300 mt-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             <input type="radio" name="my-accordion-2" defaultChecked />
             <div className="collapse-title font-semibold">How do I enroll in a course?</div>
             <div className="collapse-content text-sm text-white">
@@ -469,7 +469,7 @@ const Home = ({ backendMessage }) => {
             </div>
           </div>
 
-          <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
+          <div className="collapse collapse-arrow shadow-sm shadow-blue-300 mt-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title font-semibold">Will I get a certificate after completing a course?</div>
             <div className="collapse-content text-sm text-white">
@@ -477,7 +477,7 @@ const Home = ({ backendMessage }) => {
             </div>
           </div>
 
-          <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
+          <div className="collapse collapse-arrow shadow-sm shadow-blue-300 mt-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title font-semibold">Can I access the courses anytime?</div>
             <div className="collapse-content text-sm text-white">
@@ -485,7 +485,7 @@ const Home = ({ backendMessage }) => {
             </div>
           </div>
 
-          <div className="collapse collapse-arrow shadow-lg shadow-blue-300 mt-10">
+          <div className="collapse collapse-arrow shadow-sm shadow-blue-300 mt-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title font-semibold">What if I have doubts during learning?</div>
             <div className="collapse-content text-sm text-white">
