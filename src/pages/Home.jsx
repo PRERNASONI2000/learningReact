@@ -43,19 +43,19 @@ const Home = ({ backendMessage }) => {
   return (
     <>
       <SplashCursor />
-      <div className="relative w-full md:h-[700px] h-[1000px] flex px-5">
+      <div className="relative w-full md:h-[700px] h-[1000px] flex justify-center items-center">
         <DotGrid
           dotSize={1}
           gap={15}
           baseColor="#5227FF"
           activeColor="#5227FF"
         />
-        <div className="absolute z-10 text-center md:pb-0 pb-50">
+        <div className="absolute z-10 text-center md:pb-0 pt-6 pb-20 px-6">
 
-          <h1 data-aos="fade-up" className="pt-serif font-bold text-5xl bg-gradient-to-r pb-2 pt-6 from-primary to-secondary bg-clip-text text-transparent">
+          <h1 data-aos="fade-up" className="pt-serif font-bold text-5xl bg-gradient-to-r pb-2 from-primary to-secondary bg-clip-text text-transparent">
             SmartLearning, Learn limitless & Earn effortless
           </h1>
-          <p data-aos="fade-up" className="text-semibold text-lg leading-6 text-base-content">
+          <p data-aos="fade-up" className="text-semibold text-lg leading-6 py-4 md:py-0 text-base-content">
             Learn at your own pace with expert-led courses designed to help you <br className="hidden md:block" /> grow, achieve, and succeed.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 md:mt-20 mt-6 items-center justify-center">
@@ -74,7 +74,7 @@ const Home = ({ backendMessage }) => {
 
             </div>
           </div>
-          <button data-aos="flip-up" class="btn mt-15 uppercase text-lg bg-pink-700 text-white rounded-full h-15 md:w-100 md:w-50 w-full px-5 py-4">
+          <button data-aos="flip-up" class="btn mt-15 uppercase text-lg bg-pink-700 text-white rounded-full h-15  md:w-100 w-full py-4">
             enroll your course now <ArrowRight />
           </button>
 
@@ -365,7 +365,7 @@ const Home = ({ backendMessage }) => {
       </div>
 
 
-      <div className=" md:h-[600px] h-[800px] w-full text-center mx-auto pb-30 px-8">
+      <div className=" md:h-[600px] h-[800px] w-full text-center pb-30 px-8">
         <h4 data-aos="fade-up" className="text-3xl text-center text-base-content font-semibold py-4">
           Why Choose us ?
         </h4>

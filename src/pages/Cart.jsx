@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import DarkVeil  from "../components/DarkVeil";
 
 
 const Cart = () => {
@@ -31,6 +32,10 @@ const Cart = () => {
   }, []);
 
   return (
+   <>
+   <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+  <DarkVeil />
+</div>
     <div
       ref={cartRef}
       className="p-6 rounded-2xl shadow-lg bg-white cursor-pointer"
@@ -45,6 +50,7 @@ const Cart = () => {
   View Notification
 </button>
     </div>
+   </>
   );
 };
 

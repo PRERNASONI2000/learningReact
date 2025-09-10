@@ -46,6 +46,7 @@ const ContactForm = () => {
 
 return (
     <div className="flex justify-center items-center">
+        <img src="" alt="" />
         <form className="bg-base-100 flex flex-col gap-2 md:w-md w-sm border border-base-200 p-8 rounded-sm shadow-lg">
             <h2 className="font-semibold text-2xl text-center">Contact Form</h2>
             <label htmlFor="name" className="lable-text">Name</label>

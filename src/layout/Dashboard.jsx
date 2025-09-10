@@ -7,7 +7,7 @@ const Dashboard = ({children}) => {
   return(
       <div className="flex">
         <Sidebar />
-        <div className="flex-1 flex flex-col min-h-screen md:ml-64">
+        <div className="flex-1 flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-1 p-0 bg-base-200 text-base-content overflow-hidden"> {children} </main>
             <Footer />

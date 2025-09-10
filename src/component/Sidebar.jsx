@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import {
   Home,
   Menu,
+  X,
   LogInIcon,
   Bell,
   Settings,
@@ -33,15 +34,19 @@ const Sidebar = () => {
    <>
     {/* Mobile toggle button */}
       <button
-        className="md:hidden fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-md"
+        className=" fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-md"
         onClick={() => setIsOpen(!isOpen)}
       >
         <Menu size={20} />
       </button>
-    <aside className={`w-64 h-full bg-gray-900 text-white top-0 left-0 z-50 transform transition-transform duration-300 fixed ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}>
-      <h2 className="text-xl font-bold mb-6 border-b border-gray-300/50 px-4 py-3 pb-4">
+    <aside className={`w-64 h-full bg-gray-900 text-white top-0 left-0 z-50 transform transition-transform duration-300 fixed ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+     <div className="flex items-center justify-evenly border-gray-300/50 px-4 py-3 pb-4 border-b mb-6">
+       <h2 className="text-xl font-bold">
         My Dashboard
       </h2>
+      
+      <X size={20} className="cursor-pointer" onClick={() => setIsOpen(false)} />
+     </div>
 
       <ul className="flex flex-col  max-h-screen gap-1 p-4  overflow-y-auto">
         {sidebarItems.map((item) => (
