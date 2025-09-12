@@ -23,12 +23,12 @@ const App = () => {
     Aos.init();
   }, [])
 
-  const [data, setData] = useState("");
-   useEffect(() => {
-    axios.get("http://localhost:5000/api/hello")
-      .then(res => setData(res.data.message))
-      .catch(err => console.error(err));
-  }, []);
+  // const [data, setData] = useState("");
+  //  useEffect(() => {
+  //   axios.get("http://localhost:5000/api/hello")
+  //     .then(res => setData(res.data.message))
+  //     .catch(err => console.error(err));
+  // }, []);
   
   return (
      <Router>
@@ -43,7 +43,7 @@ const App = () => {
           element={
             <Dashboard>
               
-    <h1>{data}</h1>
+    {/* <h1>{data}</h1> */}
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/profile" element={<Profile />} />

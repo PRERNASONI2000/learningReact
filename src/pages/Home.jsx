@@ -48,7 +48,7 @@ const Home = ({ backendMessage }) => {
           dotSize={1}
           gap={15}
           baseColor="#5227FF"
-          activeColor="#5227FF"
+          activeColor="#5227FF" 
         />
         <div className="absolute z-10 text-center md:pb-0 pt-6 pb-20 px-6">
 
