@@ -346,9 +346,9 @@ const Home = ({ backendMessage }) => {
       <div className="w-full mx-auto my-20 px-6">
         <div>
           <h4 data-aos="fade-up" className="text-3xl text-center text-base-content font-semibold"> Upgrade Your Career with In-Demand Top Tech Skills</h4>
-          <div className="text-3xl text-center pt-5 pb-10 text-gray opacity-80 font-normal text-sm">new opportunities with continuous learning</div>
+          <div className="text-3xl text-center pt-3 pb-10 text-gray opacity-80 font-normal text-[18px]">new opportunities with continuous learning</div>
         </div>
-        <div className="w-[320px] md:w-[640px] lg:w-5xl mx-auto">
+        <div className="w-[300px] md:w-3xl lg:w-7xl mx-auto mt-8 pb-5">
           <LogoLoop
             logos={techLogos}
             speed={80}
@@ -367,7 +367,7 @@ const Home = ({ backendMessage }) => {
       </div>
 
 
-      <div className=" md:h-[600px] h-[800px] w-full text-center pb-30 px-8">
+      <div className="md:h-[600px] h-[800px] w-full text-center pb-30 px-8">
         <h4 data-aos="fade-up" className="text-3xl text-center text-base-content font-semibold py-4">
           Why Choose us ?
         </h4>
@@ -457,7 +457,7 @@ const Home = ({ backendMessage }) => {
 
       </div>
 
-      <div className="w-full bg-blue-950 text-blue-400 pt-5 pb-15 md:px-0 px-5">
+      <div className="w-full  pt-5 pb-15 md:px-0 px-5">
         <div className="md:w-1/2 w-full d-flex items-center justify-center mx-auto">
           <h4 data-aos="fade-up" className="text-3xl text-center font-semibold py-4">
             Why Choose us ?
@@ -499,14 +499,14 @@ const Home = ({ backendMessage }) => {
       transition={{ duration: 0.2, ease: 'easeInOut' }}
     >
       <AccordionItem value='getting-started' className='py-2'>
-        <AccordionTrigger className='w-full text-left text-blue-500'>
+        <AccordionTrigger className='w-full text-left'>
           <div className='flex items-center justify-between'>
             <div>Getting Started</div>
             <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
           </div>
         </AccordionTrigger>
         <AccordionContent>
-          <p className='text-white'>
+          <p className='text-base-content/80'>
             Discover the fundamental concepts of Motion-Primitives. This section
             guides you through the installation process and provides an overview
             of how to integrate these components into your projects. Learn about

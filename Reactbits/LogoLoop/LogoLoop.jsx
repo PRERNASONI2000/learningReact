@@ -199,7 +199,7 @@ export const LogoLoop = memo(
           'relative overflow-x-hidden group',
           '[--logoloop-gap:32px]',
           '[--logoloop-logoHeight:28px]',
-          '[--logoloop-fadeColorAuto:#ffffff]',
+          // '[--logoloop-fadeColorAuto:#ffffff]',
           // 'dark:[--logoloop-fadeColorAuto:#0b0b0b]',
           scaleOnHover && 'py-[calc(var(--logoloop-logoHeight)*0.1)]',
           className

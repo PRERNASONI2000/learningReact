@@ -60,6 +60,7 @@ const Cart = () => {
   View Notification
 </button>
     </div>
+    
    </>
   );
 };
