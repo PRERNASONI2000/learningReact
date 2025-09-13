@@ -5,7 +5,8 @@ import {
   Eye,
   GraduationCap,
   Award,
-  Users
+  Users,
+  ChevronUp 
 } from "lucide-react";
 
 
@@ -22,6 +23,7 @@ import CurvedLoop from "../../Reactbits/CurvedLoop/CurvedLoop";
 import { LogoLoop } from "../../Reactbits/LogoLoop/LogoLoop";
 import ScrollStack from "../components/ScrollStack";
 import { ScrollStackItem } from "../components/ScrollStack";
+import { Accordion, AccordionItem, AccordionContent, AccordionTrigger } from "../components/ui/accordion";
 
 
 
@@ -461,7 +463,7 @@ const Home = ({ backendMessage }) => {
             Why Choose us ?
           </h4>
 
-          <div className="collapse collapse-arrow shadow-sm shadow-blue-300 mt-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          {/* <div className="collapse collapse-arrow shadow-sm shadow-blue-300 mt-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             <input type="radio" name="my-accordion-2" defaultChecked />
             <div className="collapse-title font-semibold">How do I enroll in a course?</div>
             <div className="collapse-content text-sm text-white">
@@ -491,7 +493,80 @@ const Home = ({ backendMessage }) => {
             <div className="collapse-content text-sm text-white">
               Each course has a dedicated Q&A section where you can ask questions. Our mentors and community will help you resolve them quickly.
             </div>
+          </div> */}
+           <Accordion
+      className='flex w-full flex-col divide-y divide-zinc-200 dark:divide-zinc-700'
+      transition={{ duration: 0.2, ease: 'easeInOut' }}
+    >
+      <AccordionItem value='getting-started' className='py-2'>
+        <AccordionTrigger className='w-full text-left text-blue-500'>
+          <div className='flex items-center justify-between'>
+            <div>Getting Started</div>
+            <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
           </div>
+        </AccordionTrigger>
+        <AccordionContent>
+          <p className='text-white'>
+            Discover the fundamental concepts of Motion-Primitives. This section
+            guides you through the installation process and provides an overview
+            of how to integrate these components into your projects. Learn about
+            the core functionalities and how to set up your first animation
+            effectively.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value='animation-properties' className='py-2'>
+        <AccordionTrigger className='w-full text-left  '>
+          <div className='flex items-center justify-between'>
+            <div>Animation Properties</div>
+            <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
+          </div>
+        </AccordionTrigger>
+        <AccordionContent>
+          <p className=''>
+            Explore the comprehensive range of animation properties available in
+            Motion-Primitives. Understand how to manipulate timing, easing, and
+            delays to create smooth, dynamic animations. This segment also
+            covers the customization of animations to fit the flow and style of
+            your web applications.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value='advanced-usage' className='py-2'>
+        <AccordionTrigger className='w-full text-left  '>
+          <div className='flex items-center justify-between'>
+            <div>Advanced Usage</div>
+            <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
+          </div>
+        </AccordionTrigger>
+        <AccordionContent>
+          <p className=''>
+            Dive deeper into advanced techniques and features of
+            Motion-Primitives. Learn about chaining animations, creating complex
+            sequences, and utilizing motion sensors for interactive animations.
+            Gain insights on how to leverage these advanced features to enhance
+            user experience and engagement.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value='community-and-support' className='py-2'>
+        <AccordionTrigger className='w-full text-left  '>
+          <div className='flex items-center justify-between'>
+            <div>Community and Support</div>
+            <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
+          </div>
+        </AccordionTrigger>
+        <AccordionContent>
+          <p className=''>
+            Engage with the Motion-Primitives community to gain additional
+            support and insight. Find out how to participate in discussions,
+            contribute to the project, and access a wealth of shared knowledge
+            and resources. Learn about upcoming features, best practices, and
+            how to get help with your specific use cases.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
 
         </div>
       </div>

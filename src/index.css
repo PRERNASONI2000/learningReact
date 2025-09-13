@@ -3,6 +3,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
  @plugin "daisyui";
 
  @plugin "daisyui" {
@@ -10,7 +12,6 @@
    themes: light --default, dark --prefersdark;
 
  }
-
 
  /* ✅ Custom CSS inside Tailwind layers */
 @layer components {
@@ -55,3 +56,15 @@ h6{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+/* @layer base {
+  * {
+    @apply border-border outline-ring/50;
+
+   }
+  body {
+    @apply bg-background text-foreground;
+
+   }
+
+} */

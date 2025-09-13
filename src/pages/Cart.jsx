@@ -21,7 +21,7 @@ const Cart = () => {
     // GSAP hover animation
     const hoverAnimation = gsap.to(element, {
       scale: 1.05,
-      rotation: 3,
+      // rotation: 3,
       duration: 0.3,
       paused: true, // start paused
       ease: "power1.inOut",

@@ -12,8 +12,8 @@ import { ThemeContext } from "../context/ThemeContext";
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <header className="shadow px-4 py-1 flex justify-end items-center 
-    bg-base-200 text-base-content border-b border-base-content/10">
+    <header className="px-4 py-1 flex justify-end items-center 
+    bg-gray-800 text-white border-b border-base-content/10 fixed w-full h-14 z-40">
       {/* <h1 className="text-lg font-bold">Dashboard</h1> */}
       <div className="flex items-center">
         {/* <Link to="/login">
@@ -32,7 +32,7 @@ const Navbar = () => {
       <li>
         <details>
           <summary>More</summary>
-          <ul className="bg-base-300 rounded-t-none">
+          <ul className="bg-gray-800 rounded-t-none">
             <li><Link to="/profile" className="whitespace-nowrap">Profile</Link></li>
             <li><Link to="/login" className="whitespace-nowrap">Log Out</Link></li>
           </ul>
