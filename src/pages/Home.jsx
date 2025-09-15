@@ -460,7 +460,7 @@ const Home = ({ backendMessage }) => {
       <div className="w-full  pt-5 pb-15 md:px-0 px-5">
         <div className="md:w-1/2 w-full d-flex items-center justify-center mx-auto">
           <h4 data-aos="fade-up" className="text-3xl text-center font-semibold py-4">
-            Why Choose us ?
+            Frequency Asked Question
           </h4>
 
           {/* <div className="collapse collapse-arrow shadow-sm shadow-blue-300 mt-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
@@ -501,69 +501,53 @@ const Home = ({ backendMessage }) => {
       <AccordionItem value='getting-started' className='py-2'>
         <AccordionTrigger className='w-full text-left'>
           <div className='flex items-center justify-between'>
-            <div>Getting Started</div>
+            <div>How do I enroll in a course?</div>
             <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
           </div>
         </AccordionTrigger>
         <AccordionContent>
           <p className='text-base-content/80'>
-            Discover the fundamental concepts of Motion-Primitives. This section
-            guides you through the installation process and provides an overview
-            of how to integrate these components into your projects. Learn about
-            the core functionalities and how to set up your first animation
-            effectively.
-          </p>
+             Browse our course catalog, click on the course you like, and then click the "Enroll Now" button to start learning.
+           </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value='animation-properties' className='py-2'>
         <AccordionTrigger className='w-full text-left  '>
           <div className='flex items-center justify-between'>
-            <div>Animation Properties</div>
+            <div>Will I get a certificate after completing a course?</div>
             <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
           </div>
         </AccordionTrigger>
         <AccordionContent>
           <p className=''>
-            Explore the comprehensive range of animation properties available in
-            Motion-Primitives. Understand how to manipulate timing, easing, and
-            delays to create smooth, dynamic animations. This segment also
-            covers the customization of animations to fit the flow and style of
-            your web applications.
-          </p>
+              Yes, you will receive a digital certificate after successfully completing all modules and passing the final quiz of the course.
+            </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value='advanced-usage' className='py-2'>
         <AccordionTrigger className='w-full text-left  '>
           <div className='flex items-center justify-between'>
-            <div>Advanced Usage</div>
+            <div>Can I access the courses anytime?</div>
             <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
           </div>
         </AccordionTrigger>
         <AccordionContent>
           <p className=''>
-            Dive deeper into advanced techniques and features of
-            Motion-Primitives. Learn about chaining animations, creating complex
-            sequences, and utilizing motion sensors for interactive animations.
-            Gain insights on how to leverage these advanced features to enhance
-            user experience and engagement.
-          </p>
+           Absolutely! All our courses are self-paced and available 24/7. You can learn anytime, from any device.
+             </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value='community-and-support' className='py-2'>
         <AccordionTrigger className='w-full text-left  '>
           <div className='flex items-center justify-between'>
-            <div>Community and Support</div>
+            <div>What if I have doubts during learning?</div>
             <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
           </div>
         </AccordionTrigger>
         <AccordionContent>
           <p className=''>
-            Engage with the Motion-Primitives community to gain additional
-            support and insight. Find out how to participate in discussions,
-            contribute to the project, and access a wealth of shared knowledge
-            and resources. Learn about upcoming features, best practices, and
-            how to get help with your specific use cases.
-          </p>
+           Each course has a dedicated Q&A section where you can ask questions. Our mentors and community will help you resolve them quickly.
+            </p>
         </AccordionContent>
       </AccordionItem>
     </Accordion>
