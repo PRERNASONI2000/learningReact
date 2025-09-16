@@ -6,7 +6,7 @@ import {
   GraduationCap,
   Award,
   Users,
-  ChevronUp 
+  ChevronUp
 } from "lucide-react";
 
 
@@ -17,6 +17,8 @@ import CountUp from "..//../Reactbits/CountUp/CountUp";
 import GradientText from "..//../Reactbits/GradientText/GradientText";
 import SplashCursor from "..//../Reactbits/SplashCursor/SplashCursor";
 import ElectricBorder from "..//../Reactbits/ElectricBorder/ElectricBorder";
+import SpotlightCard from "..//components/SpotlightCard";
+import TiltedCard from "..//components/TiltedCard";
 import { ShieldCheck, X } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import CurvedLoop from "../../Reactbits/CurvedLoop/CurvedLoop";
@@ -50,7 +52,7 @@ const Home = ({ backendMessage }) => {
           dotSize={1}
           gap={15}
           baseColor="#5227FF"
-          activeColor="#5227FF" 
+          activeColor="#5227FF"
         />
         <div className="absolute z-10 text-center md:pb-0 pt-6 pb-20 px-6">
 
@@ -211,134 +213,140 @@ const Home = ({ backendMessage }) => {
         />
 
         <div className="flex flex-col md:flex-row gap-10 items-center w-full px-8 mt-5">
-          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
-            <ElectricBorder
+          <div className="w-full text-center border border-2 border-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+            <SpotlightCard
               // color="#7df9ff"
               color="#93C5FD"
-              speed={0}
-              chaos={0.5}
-              thickness={2}
+              // speed={0}
+              // chaos={0.5}
+              // thickness={2}
               style={{ borderRadius: 20 }}
-              className="shadow-none"
+              // spotlightColor="rgba(0, 229, 255, 0.2)"
+              // spotlightColor="rgba(244, 215, 220, 0.8)"
+              spotlightColor="rgba(250, 235, 237,0.8)"
+              className="shadow-none custom-spotlight-card bg-secondary border-secondary"
             >
-              <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="course1" />
+              <div
+                // className="shadow-none py-8 px-6 leading-6"
+                className="shadow-none p-4 leading-6 text-white"
+              >
+                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" className="max-w-full h-auto block mx-auto rounded-lg mb-5" alt="course1" />
                 <h3 className="text-xl font-semibold pt-serif">HTML & CSS</h3>
-                <p className="opacity-80 mt-2">Beginner • 3 Weeks</p>
-                <p className="opacity-70 mt-2">Build responsive web pages and pixel perfect website.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-cotent rounded-lg transition-all duration-300 ease-in hover:scale-110">
+                <p className="opacity-90 mt-2">Beginner • 3 Weeks</p>
+                <p className="opacity-90 mt-2">Build responsive web pages and pixel perfect website.</p>
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href=""> Start Learning</a>
                 </button>
               </div>
-            </ElectricBorder>
+            </SpotlightCard>
           </div>
-          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
-            <ElectricBorder
-              // color="#7df9ff"
+          <div className="w-full text-center border border-2 border-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+            <SpotlightCard
               color="#93C5FD"
-              speed={0}
-              chaos={0.5}
-              thickness={2}
               style={{ borderRadius: 20 }}
-              className="shadow-none"
+              spotlightColor="rgba(250, 235, 237,0.8)"
+              className="shadow-none custom-spotlight-card bg-secondary border-secondary"
             >
-              <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="JavaScript" />
+              <div className="shadow-none p-4 leading-6 text-white">
+                <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg"
+                  className="max-w-full h-auto block mx-auto rounded-lg mb-5"
+                  alt="JavaScript"
+                />
                 <h3 className="text-xl font-semibold pt-serif mt-4">JavaScript Essentials</h3>
                 <p className="opacity-80 mt-2">Beginner–Intermediate • 4 Weeks</p>
                 <p className="opacity-70 mt-2">Master the logic, DOM manipulation, and interactivity.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-cotent rounded-lg transition-all duration-100 ease-in-out hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
-            </ElectricBorder>
+            </SpotlightCard>
           </div>
-          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
-            <ElectricBorder
-              // color="#7df9ff"
+          <div className="w-full text-center border border-2 border-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+            <SpotlightCard
               color="#93C5FD"
-              speed={0}
-              chaos={0.5}
-              thickness={2}
               style={{ borderRadius: 20 }}
-              className="shadow-none"
+              
+              className="shadow-none custom-spotlight-card bg-secondary border-secondary"
             >
-              <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="React" />
+              <div className="shadow-none p-4 leading-6 text-white">
+                <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg"
+                  className="max-w-full h-auto block mx-auto rounded-lg mb-5"
+                  alt="React"
+                />
                 <h3 className="text-xl font-semibold pt-serif mt-4">React for Beginners</h3>
                 <p className="opacity-80 mt-2">Intermediate • 5 Weeks</p>
                 <p className="opacity-70 mt-2">Learn components, hooks, and state management.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-cotent rounded-lg transition-all duration-100 ease-in-out hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
-            </ElectricBorder>
+            </SpotlightCard>
           </div>
 
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-center w-full px-8 mt-5">
-          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
-            <ElectricBorder
-              // color="#7df9ff"
+          <div className="w-full text-center border border-2 border-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+            <SpotlightCard
               color="#93C5FD"
-              speed={0}
-              chaos={0.5}
-              thickness={2}
               style={{ borderRadius: 20 }}
-              className="shadow-none"
+              
+              className="shadow-none custom-spotlight-card bg-secondary border-secondary"
             >
-              <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="Tailwind CSS" />
+              <div className="shadow-none p-4 leading-6 text-white">
+                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+                  className="max-w-full h-auto block mx-auto rounded-lg mb-5"
+                  alt="Tailwind CSS"
+                />
                 <h3 className="text-xl font-semibold pt-serif mt-4">Tailwind CSS Mastery</h3>
                 <p className="opacity-80 mt-2">Intermediate • 2 Weeks</p>
                 <p className="opacity-70 mt-2">Create modern, responsive UIs faster with Tailwind.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-cotent rounded-lg transition-all duration-100 ease-in-out hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
-            </ElectricBorder>
+            </SpotlightCard>
           </div>
-          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
-            <ElectricBorder
-              // color="#7df9ff"
+          <div className="w-full text-center border border-2 border-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+            <SpotlightCard
               color="#93C5FD"
-              speed={0}
-              chaos={0.5}
-              thickness={2}
               style={{ borderRadius: 20 }}
-              className="shadow-none"
+              
+              className="shadow-none custom-spotlight-card bg-secondary border-secondary"
             >
-              <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="UI UX" />
+              <div className="shadow-none p-4 leading-6 text-white">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
+                  className="max-w-full h-auto block mx-auto rounded-lg mb-5"
+                  alt="Python"
+                />
                 <h3 className="text-xl font-semibold pt-serif mt-4">Python For Beginners</h3>
                 <p className="opacity-80 mt-2">Beginner • 3 Weeks</p>
                 <p className="opacity-70 mt-2">Understand design principles, wireframes & prototyping.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-cotent rounded-lg transition-all duration-100 ease-in-out hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
-            </ElectricBorder>
+            </SpotlightCard>
           </div>
-          <div className="w-full text-center bg-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
-            <ElectricBorder
-              // color="#7df9ff"
+          <div className="w-full text-center border border-2 border-secondary p-1.5 mt-5" style={{ borderRadius: 20 }}>
+            <SpotlightCard
               color="#93C5FD"
-              speed={0}
-              chaos={0.5}
-              thickness={2}
               style={{ borderRadius: 20 }}
-              className="shadow-none"
+              
+              className="shadow-none custom-spotlight-card bg-secondary border-secondary"
             >
-              <div className="shadow-none py-8 px-6 leading-6">
-                <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" className="max-w-full h-auto block mx-auto rounded-lg" alt="Full Stack" />
+              <div className="shadow-none p-4 leading-6 text-white">
+                <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg"
+                  className="max-w-full h-auto block mx-auto rounded-lg mb-5"
+                  alt="Full Stack"
+                />
                 <h3 className="text-xl font-semibold pt-serif mt-4">Full Stack Development</h3>
                 <p className="opacity-80 mt-2">Advanced • 8 Weeks</p>
                 <p className="opacity-70 mt-2">Frontend + Backend skills to build complete apps.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-cotent rounded-lg transition-all duration-100 ease-in-out hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
-            </ElectricBorder>
+            </SpotlightCard>
           </div>
         </div>
       </div>
@@ -367,99 +375,108 @@ const Home = ({ backendMessage }) => {
       </div>
 
 
-      <div className="md:h-[600px] h-[800px] w-full text-center pb-30 px-8">
+      <div className=" w-full text-center pb-20 px-8">
         <h4 data-aos="fade-up" className="text-3xl text-center text-base-content font-semibold py-4">
           Why Choose us ?
         </h4>
 
-        <ScrollStack>
-          {/* Benefit 1: Placements */}
-          <ScrollStackItem itemClassName="bg-pink-500 text-white rounded-2xl shadow-lg">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <Briefcase className="w-30 h-30" />
-              {/* <img
+        {/* https://images.pexels.com/photos/8637914/pexels-photo-8637914.jpeg */}
+
+        <div className="flex h-screen items-center justify-center">
+          <div className="md:w-1/2 w-full">
+            <img src="https://images.pexels.com/photos/8637914/pexels-photo-8637914.jpeg" className="w-[300px] h-auto mx-auto block" />
+          </div>
+          <div className="md:w-1/2 w-full md:h-[500px] h-[800px]">
+            <ScrollStack>
+              {/* Benefit 1: Placements */}
+              <ScrollStackItem itemClassName="bg-pink-500 text-white rounded-2xl shadow-lg">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Briefcase className="w-30 h-30" />
+                  {/* <img
           src="https://img.icons8.com/color/96/job.png"
           alt="Placement"
           className="w-24 h-24"
         /> */}
-              <h2 className="text-5xl font-extrabold pompiere">MNC & IIT Placements</h2>
-              <p className="text-lg opacity-90">
-                Get opportunities to connect with top companies, IITs and NITs for placements.
-              </p>
-            </div>
-          </ScrollStackItem>
+                  <h2 className="text-5xl font-extrabold pompiere">MNC & IIT Placements</h2>
+                  <p className="text-lg opacity-90">
+                    Get opportunities to connect with top companies, IITs and NITs for placements.
+                  </p>
+                </div>
+              </ScrollStackItem>
 
-          {/* Benefit 2: Vision */}
-          <ScrollStackItem itemClassName="bg-purple-500 text-white rounded-2xl shadow-lg">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <Eye className="w-30 h-30" />
-              {/* <img
+              {/* Benefit 2: Vision */}
+              <ScrollStackItem itemClassName="bg-purple-500 text-white rounded-2xl shadow-lg">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Eye className="w-30 h-30" />
+                  {/* <img
           src="https://img.icons8.com/color/96/vision.png"
           alt="Vision"
           className="w-24 h-24"
         /> */}
-              <h2 className="text-5xl font-extrabold pompiere">Expand Your Vision</h2>
-              <p className="text-lg opacity-90">
-                Explore new domains, learn future-ready skills, and grow beyond limits.
-              </p>
-            </div>
-          </ScrollStackItem>
+                  <h2 className="text-5xl font-extrabold pompiere">Expand Your Vision</h2>
+                  <p className="text-lg opacity-90">
+                    Explore new domains, learn future-ready skills, and grow beyond limits.
+                  </p>
+                </div>
+              </ScrollStackItem>
 
-          {/* Benefit 3: Professors */}
-          <ScrollStackItem itemClassName="bg-blue-500 text-white rounded-2xl shadow-lg">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <GraduationCap className="w-30 h-30" />
-              {/* <img
+              {/* Benefit 3: Professors */}
+              <ScrollStackItem itemClassName="bg-blue-500 text-white rounded-2xl shadow-lg">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <GraduationCap className="w-30 h-30" />
+                  {/* <img
           src="https://img.icons8.com/color/96/professor.png"
           alt="Professors"
           className="w-24 h-24"
         /> */}
-              <h2 className="text-5xl font-extrabold pompiere">Learn from Experts</h2>
-              <p className="text-lg opacity-90">
-                Get direct access to lessons from top IIT and NIT professors.
-              </p>
-            </div>
-          </ScrollStackItem>
+                  <h2 className="text-5xl font-extrabold pompiere">Learn from Experts</h2>
+                  <p className="text-lg opacity-90">
+                    Get direct access to lessons from top IIT and NIT professors.
+                  </p>
+                </div>
+              </ScrollStackItem>
 
-          {/* Benefit 4: Certificate */}
-          <ScrollStackItem itemClassName="bg-green-500 text-white rounded-2xl shadow-lg">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <Award className="w-30 h-30" />
-              {/* <img
+              {/* Benefit 4: Certificate */}
+              <ScrollStackItem itemClassName="bg-green-500 text-white rounded-2xl shadow-lg">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Award className="w-30 h-30" />
+                  {/* <img
           src="https://img.icons8.com/color/96/diploma.png"
           alt="Certificate"
           className="w-24 h-24"
         /> */}
-              <h2 className="text-5xl font-extrabold pompiere">Earn a Certificate</h2>
-              <p className="text-lg opacity-90">
-                On completion, receive an official certificate to showcase your skills.
-              </p>
-            </div>
-          </ScrollStackItem>
+                  <h2 className="text-5xl font-extrabold pompiere">Earn a Certificate</h2>
+                  <p className="text-lg opacity-90">
+                    On completion, receive an official certificate to showcase your skills.
+                  </p>
+                </div>
+              </ScrollStackItem>
 
-          {/* Benefit 5: Join Us */}
-          <ScrollStackItem itemClassName="bg-yellow-500 text-black rounded-2xl shadow-lg">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <Users className="w-30 h-30" />
-              {/* <img
+              {/* Benefit 5: Join Us */}
+              <ScrollStackItem itemClassName="bg-yellow-500 text-black rounded-2xl shadow-lg">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Users className="w-30 h-30" />
+                  {/* <img
           src="https://img.icons8.com/color/96/add-user-group-man-man.png"
           alt="Join Us"
           className="w-24 h-24"
         /> */}
-              <h2 className="text-5xl font-extrabold pompiere">Join Us Now</h2>
-              <p className="text-lg opacity-90">
-                Start your journey today and unlock limitless opportunities with us.
-              </p>
-            </div>
-          </ScrollStackItem>
-        </ScrollStack>
+                  <h2 className="text-5xl font-extrabold pompiere">Join Us Now</h2>
+                  <p className="text-lg opacity-90">
+                    Start your journey today and unlock limitless opportunities with us.
+                  </p>
+                </div>
+              </ScrollStackItem>
+            </ScrollStack>
+          </div>
+        </div>
 
 
       </div>
 
-      <div className="w-full  pt-5 pb-15 md:px-0 px-5">
+      <div className="w-full pb-15 md:px-0 px-5">
         <div className="md:w-1/2 w-full d-flex items-center justify-center mx-auto">
-          <h4 data-aos="fade-up" className="text-3xl text-center font-semibold py-4">
+          <h4 data-aos="fade-up" className="text-3xl text-center font-semibold py-4 mb-10">
             Frequency Asked Question
           </h4>
 
@@ -494,63 +511,63 @@ const Home = ({ backendMessage }) => {
               Each course has a dedicated Q&A section where you can ask questions. Our mentors and community will help you resolve them quickly.
             </div>
           </div> */}
-           <Accordion
-      className='flex w-full flex-col divide-y divide-zinc-200 dark:divide-zinc-700'
-      transition={{ duration: 0.2, ease: 'easeInOut' }}
-    >
-      <AccordionItem value='getting-started' className='py-2'>
-        <AccordionTrigger className='w-full text-left'>
-          <div className='flex items-center justify-between'>
-            <div>How do I enroll in a course?</div>
-            <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
-          </div>
-        </AccordionTrigger>
-        <AccordionContent>
-          <p className='text-base-content/80'>
-             Browse our course catalog, click on the course you like, and then click the "Enroll Now" button to start learning.
-           </p>
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value='animation-properties' className='py-2'>
-        <AccordionTrigger className='w-full text-left  '>
-          <div className='flex items-center justify-between'>
-            <div>Will I get a certificate after completing a course?</div>
-            <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
-          </div>
-        </AccordionTrigger>
-        <AccordionContent>
-          <p className=''>
-              Yes, you will receive a digital certificate after successfully completing all modules and passing the final quiz of the course.
-            </p>
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value='advanced-usage' className='py-2'>
-        <AccordionTrigger className='w-full text-left  '>
-          <div className='flex items-center justify-between'>
-            <div>Can I access the courses anytime?</div>
-            <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
-          </div>
-        </AccordionTrigger>
-        <AccordionContent>
-          <p className=''>
-           Absolutely! All our courses are self-paced and available 24/7. You can learn anytime, from any device.
-             </p>
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value='community-and-support' className='py-2'>
-        <AccordionTrigger className='w-full text-left  '>
-          <div className='flex items-center justify-between'>
-            <div>What if I have doubts during learning?</div>
-            <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
-          </div>
-        </AccordionTrigger>
-        <AccordionContent>
-          <p className=''>
-           Each course has a dedicated Q&A section where you can ask questions. Our mentors and community will help you resolve them quickly.
-            </p>
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+          <Accordion
+            className='flex w-full flex-col divide-y divide-zinc-200 dark:divide-zinc-700'
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+          >
+            <AccordionItem value='getting-started' className='py-2 mt-6'>
+              <AccordionTrigger className='w-full text-left'>
+                <div className='flex items-center justify-between'>
+                  <div>How do I enroll in a course?</div>
+                  <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className='text-base-content/80'>
+                  Browse our course catalog, click on the course you like, and then click the "Enroll Now" button to start learning.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value='animation-properties' className='py-2'>
+              <AccordionTrigger className='w-full text-left  '>
+                <div className='flex items-center justify-between'>
+                  <div>Will I get a certificate after completing a course?</div>
+                  <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className=''>
+                  Yes, you will receive a digital certificate after successfully completing all modules and passing the final quiz of the course.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value='advanced-usage' className='py-2'>
+              <AccordionTrigger className='w-full text-left  '>
+                <div className='flex items-center justify-between'>
+                  <div>Can I access the courses anytime?</div>
+                  <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className=''>
+                  Absolutely! All our courses are self-paced and available 24/7. You can learn anytime, from any device.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value='community-and-support' className='py-2 mb-6'>
+              <AccordionTrigger className='w-full text-left  '>
+                <div className='flex items-center justify-between'>
+                  <div>What if I have doubts during learning?</div>
+                  <ChevronUp className='h-4 w-4  transition-transform duration-200 group-data-expanded:-rotate-180 ' />
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className=''>
+                  Each course has a dedicated Q&A section where you can ask questions. Our mentors and community will help you resolve them quickly.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
 
         </div>
       </div>

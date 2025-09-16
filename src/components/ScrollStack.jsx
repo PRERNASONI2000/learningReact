@@ -239,7 +239,8 @@ const ScrollStack = ({
 
   return (
     <div
-      className={`relative w-full h-full overflow-y-scroll hide-scrollbar overflow-x-visible ${className}`.trim()}
+      // className={`relative w-full h-full overflow-y-scroll hide-scrollbar overflow-x-visible ${className}`.trim()}
+      className={`relative w-full h-full overflow-y-scroll overflow-x-visible ${className}`.trim()}
       ref={scrollerRef}
       style={{
         overscrollBehavior: 'contain',
