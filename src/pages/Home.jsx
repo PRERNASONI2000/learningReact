@@ -61,7 +61,7 @@ const Home = ({ backendMessage }) => {
           </h1>
           <p data-aos="fade-up" className="text-semibold text-lg leading-6 py-4 md:py-0 text-base-content">
             Learn at your own pace with expert-led courses designed to help you <br className="hidden md:block" /> grow, achieve, and succeed.
-          </p>
+          </p> 
           <div className="grid grid-cols-1 md:grid-cols-2 md:mt-20 mt-6 items-center justify-center">
             <div className="p-0" data-aos="fade-right"> <img
               className="border-b-8 border-b-cyan-500 w-80 mx-auto"
@@ -234,7 +234,7 @@ const Home = ({ backendMessage }) => {
                 <h3 className="text-xl font-semibold pt-serif">HTML & CSS</h3>
                 <p className="opacity-90 mt-2">Beginner • 3 Weeks</p>
                 <p className="opacity-90 mt-2">Build responsive web pages and pixel perfect website.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-content rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href=""> Start Learning</a>
                 </button>
               </div>
@@ -255,7 +255,7 @@ const Home = ({ backendMessage }) => {
                 <h3 className="text-xl font-semibold pt-serif mt-4">JavaScript Essentials</h3>
                 <p className="opacity-80 mt-2">Beginner–Intermediate • 4 Weeks</p>
                 <p className="opacity-70 mt-2">Master the logic, DOM manipulation, and interactivity.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-content rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
@@ -276,7 +276,7 @@ const Home = ({ backendMessage }) => {
                 <h3 className="text-xl font-semibold pt-serif mt-4">React for Beginners</h3>
                 <p className="opacity-80 mt-2">Intermediate • 5 Weeks</p>
                 <p className="opacity-70 mt-2">Learn components, hooks, and state management.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-content  rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
@@ -300,7 +300,7 @@ const Home = ({ backendMessage }) => {
                 <h3 className="text-xl font-semibold pt-serif mt-4">Tailwind CSS Mastery</h3>
                 <p className="opacity-80 mt-2">Intermediate • 2 Weeks</p>
                 <p className="opacity-70 mt-2">Create modern, responsive UIs faster with Tailwind.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-content rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
@@ -321,7 +321,7 @@ const Home = ({ backendMessage }) => {
                 <h3 className="text-xl font-semibold pt-serif mt-4">Python For Beginners</h3>
                 <p className="opacity-80 mt-2">Beginner • 3 Weeks</p>
                 <p className="opacity-70 mt-2">Understand design principles, wireframes & prototyping.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-content rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
@@ -342,7 +342,7 @@ const Home = ({ backendMessage }) => {
                 <h3 className="text-xl font-semibold pt-serif mt-4">Full Stack Development</h3>
                 <p className="opacity-80 mt-2">Advanced • 8 Weeks</p>
                 <p className="opacity-70 mt-2">Frontend + Backend skills to build complete apps.</p>
-                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-gray-800 rounded-lg transition-all duration-300 ease-in hover:scale-110">
+                <button className="mt-4 px-4 py-2 cursor-pointer bg-base-300 text-base-content rounded-lg transition-all duration-300 ease-in hover:scale-110">
                   <a href="#">Start Learning</a>
                 </button>
               </div>
