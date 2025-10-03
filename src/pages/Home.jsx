@@ -15,7 +15,7 @@ import CircularText from "../../Reactbits/CircularText/CircularText";
 import DotGrid from "..//../Reactbits/DotGrid/DotGrid";
 import CountUp from "..//../Reactbits/CountUp/CountUp";
 import GradientText from "..//../Reactbits/GradientText/GradientText";
-import SplashCursor from "..//../Reactbits/SplashCursor/SplashCursor";
+// import SplashCursor from "..//../Reactbits/SplashCursor/SplashCursor";
 import ElectricBorder from "..//../Reactbits/ElectricBorder/ElectricBorder";
 import SpotlightCard from "..//components/SpotlightCard";
 import TiltedCard from "..//components/TiltedCard";
@@ -46,7 +46,7 @@ const Home = ({ backendMessage }) => {
 
   return (
     <>
-      <SplashCursor />
+      {/* <SplashCursor /> */}
       <div className="relative w-full md:h-[700px] h-[1000px] flex justify-center items-center">
         <DotGrid
           dotSize={1}
@@ -383,10 +383,10 @@ const Home = ({ backendMessage }) => {
         {/* https://images.pexels.com/photos/8637914/pexels-photo-8637914.jpeg */}
 
         <div className="flex h-screen items-center justify-center">
-          <div className="md:w-1/2 w-full">
+          {/* <div className="md:w-1/2 w-full">
             <img src="https://images.pexels.com/photos/8637914/pexels-photo-8637914.jpeg" className="w-[300px] h-auto mx-auto block" />
-          </div>
-          <div className="md:w-1/2 w-full md:h-[500px] h-[800px]">
+          </div> */}
+          <div className="md:w-full lg:w-3/4 sm:w-full w-full md:h-[500px] h-[800px]">
             <ScrollStack>
               {/* Benefit 1: Placements */}
               <ScrollStackItem itemClassName="bg-pink-500 text-white rounded-2xl shadow-lg">

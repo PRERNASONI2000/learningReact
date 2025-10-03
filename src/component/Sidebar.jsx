@@ -10,8 +10,11 @@ import {
   User,
   LayoutGrid,
   HelpCircle,
+  ShoppingCart,
   LogIn,
-  UserPlus
+  UserPlus,
+  Phone,
+  HeartPlus,
 } from "lucide-react";
 
 const sidebarItems = [
@@ -24,9 +27,15 @@ const sidebarItems = [
   { title: "Support", icon: <HelpCircle size={20} />, path: "/support" },
   { title: "Login", icon: <LogIn size={20} />, path: "/login" },
   { title: "SignUp", icon: <UserPlus size={20} />, path: "/signup" },
-  { title: "Contact", icon: <HelpCircle size={20} />, path: "/contact" },
-  { title: "Cart", icon: <HelpCircle size={20} />, path: "/cart" },
+  { title: "Contact", icon: <Phone size={20} />, path: "/contact" },
+  { title: "Cart", icon: <ShoppingCart size={20} />, path: "/cart" },
+  { title: "FigmaToReact", icon: <HeartPlus size={20} />, 
+     submenu: [
+      { title: "iMail" , path: "/design/imail"},
+     ] },
 ];
+
+// 
  
 const Sidebar = () => {
   const[isOpen, setIsOpen] = useState(false);
@@ -48,9 +57,39 @@ const Sidebar = () => {
       <X size={20} className="cursor-pointer" onClick={() => setIsOpen(false)} />
      </div>
 
-      <ul className="flex flex-col  max-h-screen gap-1 p-4  overflow-y-auto">
+      <ul className="flex flex-col max-h-screen gap-1 p-4  overflow-y-auto h-[400px]">
         {sidebarItems.map((item) => (
           <li key={item.title}>
+              {item.submenu ? (
+        <div tabIndex={0} className="dropdown">
+          <button className="py-2 px-3 flex items-center gap-3 rounded-md w-full text-left hover:bg-gray-800 text-gray-300">
+            {item.icon}
+            <span>{item.title}</span>
+            <svg className="ml-auto w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <ul className="dropdown-content menu p-2 shadow bg-gray-900 rounded-box w-full mt-1">
+            {item.submenu.map((sub) => (
+              <li key={sub.title}>
+                <NavLink
+                  to={sub.path}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `py-2 px-3 rounded-md transition ${
+                      isActive
+                        ? "bg-gray-700 text-blue-400"
+                        : "hover:bg-gray-800 text-gray-300"
+                    }`
+                  }
+                >
+                  {sub.title}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
             <NavLink
               to={item.path} // ✅ Corrected path
               onClick={() => setIsOpen(false)}
@@ -64,14 +103,14 @@ const Sidebar = () => {
             >
               {item.icon}
               <span>{item.title}</span>
-            </NavLink>
+            </NavLink> )}
           </li>
         ))}
       </ul>
     </aside>
     {isOpen && (
   <div
-    className="fixed inset-0 bg-black/50 z-40 md:hidden"
+    className="fixed inset-0 bg-black/20 z-40"
     onClick={() => setIsOpen(false)}
   ></div>
 )}

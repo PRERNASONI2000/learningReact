@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import SignUp from "./pages/Signup";
 import ContactForm from "./pages/Contactform";
 import Cart from "./pages/Cart";
+import Imail from "./pages/imail/Imail";
 
 
 
@@ -54,6 +55,7 @@ const App = () => {
                 <Route path="/notification" element={<Notification />} />
                 <Route path="/contact" element={<ContactForm />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="design/imail" element={<Imail />} />
               </Routes>
             </Dashboard>
           }
