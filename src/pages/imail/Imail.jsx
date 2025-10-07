@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../imail/imail.css";
+// import "../imail/bootstrap.min.css";
+
 
 const Imail= () => {
+  // useEffect(()=>{
+  //   const link = document.createElement("link");
+  //   link.rel = "stylesheet";
+  //   link.href = "/bootstrap.min.css";
+  //   document.head.appendChild(link);
+
+  //   return () => {
+  //     document.head.removeChild(link);
+  //   }
+  // },[])
   return (
     <>
      {/* <!-- header section starts --> */}
